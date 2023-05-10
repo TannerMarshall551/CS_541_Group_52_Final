@@ -63,3 +63,8 @@
   background-color: #fff;
   z-index: 9999;
 }
+
+.coverPic {
+  max-width: 25%;
+  max-height: 25%;
+}
