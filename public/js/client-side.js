@@ -347,11 +347,11 @@ validateRegistrationForm()
 function displayErrors(errors) {
     const errorList = document.querySelector("#errors");
     errorList.innerHTML = "";
-    errors.forEach(function(error) {
-        const errorItem = document.createElement("li");
+    for (let error of errors) {
+        let errorItem = document.createElement("li");
         errorItem.textContent = error;
-        errorList.appendChild(errorItem);
-        });
+        errorList.append(errorItem);
+      }
     }
 
 
